@@ -122,3 +122,56 @@ span{
     position: absolute;
     z-index: 10;
 }
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+
+.container{
+    width: 290px;
+}
+
+.container h2{
+    font-size: 20px;
+}
+
+.container p{
+    font-size: 14px;
+}
+
+.container h1{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.container input{
+    width: 220px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.setting{
+    height: 80px;
+}
+
+.setting-btn{
+    top: 20px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+}
+
+.timer{
+    left: 20px;
+}
+
+.scorecard{
+    right: 20px;
+}
+
+.gameover h1, .gameover p{
+    margin: 0 0 12px 0;
+
+}
+
+}
