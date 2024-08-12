@@ -14,8 +14,6 @@ let score = 0;
 
 let time = 10;
 
-let addtime = 10;
-
 let difficulty = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'easy';
 
 difficultyDropdown.value = localStorage.getItem('difficulty') !== null ? localStorage.getItem('difficulty') : 'easy';
@@ -63,15 +61,13 @@ userWord.addEventListener('input', e => {
         incrementScore();
         e.target.value = '';
         if(difficulty === 'easy'){
-            time = addtime;
+            time = 10;
         } 
         else if(difficulty === 'medium'){
-            addtime = 6;
-            time = addtime;
+            time = 6;
         } 
         else {
-            addtime = 4;
-            time = addtime;
+            time = 4;
         }
         timeElement.innerHTML = `${time}s`;
     }
